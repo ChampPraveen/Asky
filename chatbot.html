@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Thoughts Chatbot</title>
+    <link rel="stylesheet" href="chatbot.css"> <!-- Chatbot-specific CSS file -->
+</head>
+<body>
+
+    <!-- Chatbot Container -->
+    <section class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <img src="chatbot.jpg" alt="Chatbot">
+            <span>Happy Thoughts Chatbot</span>
+            <button class="close-btn" onclick="toggleChatbot()">×</button> <!-- Close button -->
+        </div>
+        <div class="msger-chat" id="chat">
+            <!-- Chat history goes here -->
+        </div>
+        <form class="msger-inputarea">
+            <input class="msger-input" id="userInput" type="text" placeholder="Type a message..." required />
+            <button type="submit" class="msger-send-btn">&#10148;</button> <!-- Send button -->
+        </form>
+    </section>
+
+    <script src="bot.js"></script> <!-- Chatbot JavaScript file -->
+</body>
+</html>

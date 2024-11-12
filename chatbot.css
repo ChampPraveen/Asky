@@ -1,0 +1,180 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4a3d71;
+    background-image: linear-gradient(135deg, #4a3d71 0%, #a776a2 46%, #d8c8ac 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Chatbot Container */
+.chatbot-container {
+    width: 90%;
+    max-width: 900px;
+    height: 90vh;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chatbot Header */
+.chatbot-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9874ad;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.chatbot-header img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+/* Chat Area */
+.msger-chat {
+    padding: 20px;
+    overflow-y: auto;
+    flex: 1;
+    background-color: #e4d0b9;
+    border-top: 2px solid #c8c99e;
+    border-bottom: 2px solid #c8c99e;
+    scroll-behavior: smooth;
+}
+
+.msger-chat::-webkit-scrollbar {
+    width: 8px;
+}
+
+.msger-chat::-webkit-scrollbar-thumb {
+    background-color: #9874ad;
+    border-radius: 8px;
+}
+
+.msger-chat::-webkit-scrollbar-track {
+    background-color: #e4d0b9;
+}
+
+/* Chat Messages */
+.msg {
+    display: flex;
+    margin: 10px 15px;
+}
+
+.right-msg {
+    justify-content: flex-end;
+}
+
+.left-msg {
+    justify-content: flex-start;
+}
+
+.msg-bubble {
+    background-color: #e0f7fa;
+    border-radius: 15px;
+    padding: 12px 18px;
+    color: #000000;
+    max-width: 70%;
+    font-size: 0.9em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.right-msg .msg-bubble {
+    background-color: #2A3663;
+    color: #ffffff;
+}
+
+/* Message Info */
+.msg-info {
+    font-size: 0.8em;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* Input Area */
+.msger-inputarea {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f8e5;
+    border-top: 2px solid #c8c99e;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.msger-input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    margin-right: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.msger-input:focus {
+    outline: none;
+    border-color: #9874ad;
+    box-shadow: 0 0 8px rgba(152, 116, 173, 0.2);
+}
+
+/* Send Button */
+.msger-send-btn {
+    background-color: #9874ad;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.msger-send-btn:hover {
+    background-color: #82599a;
+}
+
+.msger-send-btn:active {
+    background-color: #6f4d83;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #d8c8ac; /* Slight color change on hover */
+}
+
+/* Positioning in chatbot-header */
+.chatbot-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
